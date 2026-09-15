@@ -92,7 +92,7 @@ const Landscape = () => {
               color: '#B87333',
               fontWeight: 600
             }}>
-              9.16 Acres of Intended Luxury &middot; 36 Curated Zones
+              9.16 Acres &middot; {legendItems.length} Landscape Zones
             </p>
           </motion.div>
         </div>

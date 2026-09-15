@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import RERACompliance from './RERACompliance';
 
 // Poster is shown at paint and fades out once the Vimeo iframe fires
 // onLoad. Using /assets/images/high.webp as a placeholder still — TODO:
@@ -14,33 +15,48 @@ const Hero = ({ startLoad }) => {
     <div id="hero">
       <style dangerouslySetInnerHTML={{ __html: `
         #hero {
-          height: auto !important;
-          min-height: auto !important;
+          height: 100vh !important;
+          height: 100dvh !important;
+          min-height: 100vh !important;
+          min-height: 100dvh !important;
           position: relative !important;
           width: 100vw !important;
           overflow: hidden !important;
         }
+        .hero-video-wrap {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+          height: 100dvh;
+          overflow: hidden;
+        }
+        .hero-video-frame {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100vw;
+          height: 56.25vw; /* 16:9 */
+          min-height: 100vh;
+          min-height: 100dvh;
+          min-width: 177.78vh; /* 16:9, driven by height */
+          min-width: 177.78dvh;
+          transform: translate(-50%, -50%);
+        }
       `}} />
-      <div 
-        style={{ 
-          padding: '56.25% 0 0 0', 
-          position: 'relative', 
-          width: '100vw',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
+      <div className="hero-video-wrap">
         {startLoad && (
           <iframe
+            className="hero-video-frame"
             src="https://player.vimeo.com/video/1189990079?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             title="Tribhuja Hero"
           ></iframe>
         )}
       </div>
+
+      <RERACompliance variant="badge" />
 
       {/* <div className="hero-overlay" aria-hidden="false">
         <p style={{

@@ -173,7 +173,7 @@ const LegacyPane = ({ title, sub, images, mobileImages, desc, num, label, active
             src={images[0]}
             mobileSrc={mobileImages && mobileImages[0]}
             className="asset-img-hover"
-            alt={`Tribhuja Legacy - ${label} - Premium apartments ORR Hyderabad`}
+            alt={`Tribhuja Legacy - ${label} - Apartments ORR Hyderabad`}
             width="3200"
             height="3400"
             style={{
@@ -216,8 +216,7 @@ const Tatva = () => {
           opacity,
           backgroundImage: 'url(/assets/images/copper.webp)',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          backgroundPosition: 'center'
         }}
         className="ps"
         id="s1" 
@@ -282,7 +281,7 @@ const Tatva = () => {
             <Picture
               src="/assets/images/gangowhite.webp"
               mobileSrc="/assets/images/gangowhite-mobile.webp"
-              alt="Gangothri Infraedge - Premium apartments ORR Hyderabad"
+              alt="Gangothri Infraedge - Apartments ORR Hyderabad"
               width="930"
               height="244"
               style={{ height: 'clamp(32px, 6vw, 68px)', width: 'auto', opacity: 1 }}

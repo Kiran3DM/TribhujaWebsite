@@ -13,7 +13,7 @@ const EXPLORER_DATA = {
   clubhouse: {
     title: 'Club Tribhuja',
     subtitle: 'Morning. Afternoon. Evening. Every hour of Club Tribhuja has somewhere to go.',
-    description: '1,00,000 sft. Kollur\'s largest clubhouse. Because every hour of the day deserves a space of its own',
+    description: '1,00,000 sft. clubhouse. Because every hour of the day deserves a space of its own',
     items: [
       { level: '01', title: 'A Lobby', descriptor: 'that leaves every door a little open. So the day can wander, and always find its way back.', img: '/assets/images/lobby.webp', mobileImg: '/assets/images/lobby-mobile.webp' },
       { level: '02', title: 'Banquet Hall', descriptor: 'The flowers have been placed. The chairs have been pulled in. The evening begins when you do.', img: '/assets/images/Bandq.webp', mobileImg: '/assets/images/Bandq-mobile.webp' },
@@ -35,7 +35,7 @@ const EXPLORER_DATA = {
   Grounds: {
     title: 'The Grounds',
     subtitle: '72% Open Space',
-    description: 'The luxury is in what was left alone.',
+    description: 'What was left alone, was left on purpose.',
     items: [
       { level: '01', title: 'The Pool', descriptor: 'Where the world disappears', img: '/assets/images/The-pool.webp', mobileImg: '/assets/images/The-pool-mobile.webp' },
       { level: '02', title: 'Amphitheater & Temple', descriptor: '', img: '/assets/images/Amphi-thea.webp', mobileImg: '/assets/images/Amphi-thea-mobile.webp' },
@@ -53,7 +53,7 @@ const EXPLORER_DATA = {
     items: [
       { level: '01', title: 'High-Speed Lifts', descriptor: 'Floor 0 to Floor 37 in less than 60 seconds.', img: '/assets/images/lift.webp', mobileImg: '/assets/images/lift-mobile.webp' },
       { level: '02', title: 'Top of the World', descriptor: 'Some views change the way you see everything.', img: '/assets/images/sky.webp', mobileImg: '/assets/images/sky-mobile.webp' },
-      { level: '03', title: 'The Sky Bridge', descriptor: 'A private crossing, \nexclusive to Towers A & B.', img: '/assets/images/two-towers.webp', mobileImg: '/assets/images/two-towers-mobile.webp' },
+      { level: '03', title: 'The Sky Bridge', descriptor: 'A private crossing, \nlimited to Towers A & B.', img: '/assets/images/two-towers.webp', mobileImg: '/assets/images/two-towers-mobile.webp' },
       { level: '04', title: 'Terrace Garden', descriptor: '', img: '/assets/images/garden.webp', mobileImg: '/assets/images/garden-mobile.webp' },
     ]
   },
@@ -195,7 +195,7 @@ const LifestyleExplorer = () => {
     outdoor:   (title) => `Tribhuja grounds ${title} — gated community apartments Kollur Hyderabad`,
     home:      (title) => `3 BHK apartment interiors Kollur — Tribhuja ${title} flats with good ventilation`,
     terrace:   (title) => `High rise apartments Hyderabad — Tribhuja ${title} at nine-tower new launch near ORR`,
-    TheArrival:(title) => `Luxury 3 & 4 BHK apartments in Kollur — Tribhuja ${title}`
+    TheArrival:(title) => `3 & 4 BHK apartments in Kollur — Tribhuja ${title}`
   };
 
   const scrollNext = () => {

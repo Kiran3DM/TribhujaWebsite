@@ -90,7 +90,6 @@ const ProjectHighlights = ({ onSiteVisit, onBrochure, onPriceSheet, onPaymentPla
         backgroundImage: 'url("/assets/images/copper.webp")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
         zIndex: 0
       }} />
 
@@ -134,7 +133,7 @@ const ProjectHighlights = ({ onSiteVisit, onBrochure, onPriceSheet, onPaymentPla
           <Picture
             src="/assets/images/high.webp"
             mobileSrc="/assets/images/high-mobile.webp"
-            alt="Premium apartments in Hyderabad Kollur by Zuari Gangothri Tribhuja — nine towers at ORR Exit 2"
+            alt="Apartments in Hyderabad Kollur by Zuari Gangothri Tribhuja — nine towers at ORR Exit 2"
             width="5000"
             height="2813"
             style={{
@@ -172,7 +171,7 @@ const ProjectHighlights = ({ onSiteVisit, onBrochure, onPriceSheet, onPaymentPla
           fontFamily: "'Cormorant Garamond', serif",
           lineHeight: 1.2,
           marginBottom: '40px'
-        }}>Luxury 3 & 4 BHK Flats in Kollur</h1>
+        }}>3 & 4 BHK Flats in Kollur</h1>
 
         {/* HUD STATS GRID */}
         <div className="ph-stats-grid" style={{
