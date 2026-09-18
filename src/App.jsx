@@ -10,8 +10,6 @@ import { useScrollReveal } from './hooks/useScrollReveal';
 import { useHeroFrames } from './hooks/useHeroFrames';
 import Lenis from 'lenis';
 import { analytics } from './utils/analytics';
-import Blog from './components/Blog';
-import BlogDetail from './components/BlogDetail';
 import ContactUs from './components/ContactUs';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -143,8 +141,6 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
-      <Route path="/blog" element={<Blog />} />
-	   <Route path="/blog/:slug" element={<BlogDetail />} />
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/thank-you" element={
         <div className="app-container">
