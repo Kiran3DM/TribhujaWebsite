@@ -75,7 +75,7 @@ const Navbar = () => {
           />
           <img
             src="/assets/images/logo-320w.png"
-            alt="Tribhuja Luxury Apartments Kollur Hyderabad"
+            alt="Tribhuja Apartments Kollur Hyderabad"
             width="320"
             height="83"
             className="nw-logo tribhuja-logo"

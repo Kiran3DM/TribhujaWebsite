@@ -2,6 +2,7 @@ import React from 'react';
 import Picture from './Picture';
 import { sysCredit } from '../utils/credits';
 import { analytics } from '../utils/analytics';
+import RERACompliance, { CONTACT_ADDRESS_FONT_SIZE } from './RERACompliance';
 
 const Footer = ({ onDownloadBrochure, onDownloadPriceSheet, onDownloadPaymentPlan, onSiteVisit }) => {
   return (
@@ -49,16 +50,15 @@ const Footer = ({ onDownloadBrochure, onDownloadPriceSheet, onDownloadPaymentPla
         </div>
 
         <div style={{ textAlign: 'center' }}>
-          <span className="footer-rera" style={{
-            color: '#B87333',
-            fontSize: '0.65rem',
-            letterSpacing: '0.25em',
-            textTransform: 'uppercase',
-            fontWeight: 500
+          <span className="footer-address" style={{
+            color: 'rgba(237, 230, 218, 0.7)',
+            fontSize: CONTACT_ADDRESS_FONT_SIZE,
+            letterSpacing: '0.08em',
+            display: 'block',
+            lineHeight: 1.6
           }}>
-            TG RERA NO : P01100010650 <br />
-            TG RERA NO : P01100010651 <br />
-            TG RERA NO : P01100010652
+            Kollur, ORR Exit 2, Hyderabad, Telangana<br />
+            <a href="tel:+919000358004" style={{ color: 'rgba(237, 230, 218, 0.7)', textDecoration: 'none' }}>+91 90003 58004</a>
           </span>
         </div>
 
@@ -161,6 +161,16 @@ const Footer = ({ onDownloadBrochure, onDownloadPriceSheet, onDownloadPaymentPla
         </div>
       </div>
 
+      <div style={{
+        position: 'relative',
+        zIndex: 1,
+        maxWidth: '1400px',
+        margin: '32px auto 0',
+        padding: '0 5vw'
+      }}>
+        <RERACompliance variant="block" />
+      </div>
+
       {/* Brand-triad credit — sitewide Zuari + Gangothri signal
           for SEO knowledge graph and for the reader. */}
       <div style={{
@@ -198,7 +208,7 @@ const Footer = ({ onDownloadBrochure, onDownloadPriceSheet, onDownloadPaymentPla
           textTransform: 'uppercase'
         }}>
           <span className="copyright-text" style={{ color: 'rgba(237, 230, 218, 0.5)' }}>
-            &copy; {new Date().getFullYear()} Tribhuja by Zuari Infraworld &amp; Gangothri Infraedge. All rights reserved.
+            &copy; {new Date().getFullYear()} Tribhuja by Zuari Infraworld &amp; Gangothri Infraedge. - All rights reserved.
           </span>
           <span style={{ color: 'transparent', userSelect: 'all' }}>
             {sysCredit}

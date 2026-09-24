@@ -120,7 +120,7 @@ const Tribhuja = () => {
       img: '/assets/images/arrival.webp',
       mobileImg: '/assets/images/arrival-mobile.webp',
       // SEO alt — primary keywords 1, 2 + brand triad.
-      alt: 'Luxury 3 & 4 BHK apartments in Kollur Hyderabad — Zuari Gangothri Tribhuja arrival',
+      alt: '3 & 4 BHK apartments in Kollur Hyderabad — Zuari Gangothri Tribhuja arrival',
       caption: 'Your first step into a life that\'s been waiting.' 
     },
     {
@@ -138,8 +138,8 @@ const Tribhuja = () => {
       mobileImg: '/assets/images/out-mobile.webp',
       category: 'outdoor',
       // SEO alt — keyword 11 (gated community) + scale fact.
-      alt: 'Gated community apartments Kollur — Tribhuja grounds across 9.16 acres with 76% open ground',
-      caption: 'The luxury is in what was left alone' // p.37
+      alt: 'Gated community apartments Kollur — Tribhuja grounds across 9.16 acres with 72% open space',
+      caption: 'What was left alone, was left on purpose' // p.37
     },
     {
       title: 'The Rise',
