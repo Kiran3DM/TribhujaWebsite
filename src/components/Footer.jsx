@@ -200,6 +200,10 @@ icon:(
 HOME
 </Link>
 
+<Link to="/blog">
+Blog
+</Link>
+        
 <Link to="/contact">
 CONTACT US
 </Link>
